@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image OverLap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body onload="populateImageTags()">
+    <div>
+        <img src="" title="Image1" class="image-style" alt="" id="image1" srcset="">
+        <img src="" title="Image2" class="image-style" alt="" id="image2" srcset="">
+    </div>
+    <div>
+        <button id="enableButton" class="button-style" type="submit" onclick="overlap()">
+            Click to Overlay
+        </button>
+    </div>
+    <div>
+        <canvas title="Overlapped Canvas" class="canvas-style image-style" width="368px" height="368px" id="canvas">
+        </canvas>
+    </div>
+</body>
+
+</html>

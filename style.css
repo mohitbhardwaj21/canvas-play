@@ -1,0 +1,19 @@
+.button-style {
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #0319A8;
+    background-color: #0319A8;
+    color: #F5F5F5;
+    margin-top: 10px;
+    margin-left: 320px;
+}
+
+.canvas-style {
+    margin-top: 20px;
+    margin-left: 230px;
+}
+
+.image-style {
+    border-radius: 3px;
+    cursor: pointer;
+}
