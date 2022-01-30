@@ -2,7 +2,8 @@
 let populateImageTags = () => {
     // Declaring Image Url
     let url1 = 'https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg';
-    let url2 = 'https://www.stockvault.net/data/2020/01/25/272807/thumb16.jpg';
+    // let url2 = 'https://www.stockvault.net/data/2020/01/25/272807/thumb16.jpg';
+    let url2 = 'https://images.credly.com/size/680x680/images/db90e38e-e5ca-4851-a2cd-e940d940ceba/Data_Security_2.png';
 
     // Assiging img Url to the respective img tag
     document.getElementById('image1').setAttribute('src', url1);
@@ -26,9 +27,16 @@ let overlap = () => {
     // Creating 2d context to draw canvas on
     let context = canv.getContext('2d');
     // Specifying which Element to draw at what axis and what will be its dimensions 
+    context.globalAlpha = 0.9;
     context.drawImage(img1, 0, 0, 300, 300);
     // Setting opacity for second element to be placed
-    context.globalAlpha = 0.9;
     // Specifying which Element to draw at what axis and what will be its dimensions 
     context.drawImage(img2, 100, 100, 100, 100);
+    // let dataURI = canv.toDataURL();
+    // console.log(dataURI)
+    canv.toBlob(function(blob) {
+        console.log('checking blob', blob)
+        url = URL.createObjectURL(blob);
+        console.log('checkingURL', url);
+    })
 }
